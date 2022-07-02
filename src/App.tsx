@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { SendRandom } from './SendRandom';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -18,6 +17,8 @@ function App() {
         >
           Learn React
         </a>
+        <SendRandom />
+        {/* <button>Request Airdrop</button> */}
       </header>
     </div>
   );
