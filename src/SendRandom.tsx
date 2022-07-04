@@ -17,6 +17,9 @@ export const SendRandom = () => {
         lamports: 1,
       })
     );
+    transaction.recentBlockhash = (
+      await connection.getLatestBlockhash()
+    ).blockhash;
 
     const signature = await sendTransaction(transaction, connection);
 
